@@ -3,86 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-    <!--Link Icons BootStrap-->
+    <title>Finder - Buscador de Produtos</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--Link CSS-->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Finder</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Inicio Header-->
-    <header class="header">
-        <div class="title-search">
-            <div class="nav-bar_logo">
-                <h1>Finder</h1>
-            </div>
-            <div class="search_nav-bar">
-                <label for="searchInput">
-                    <span>
-                        <i class="bi bi-search" style="font-size: 30px;"></i>
-                    </span>
-                </label>
-                <input type="text" id="searchInput" placeholder="Encontre seu produto">
-            </div>
-        </div>
-        <nav class="header_nav-bar">
-            <ul id="nav-bar_items">
-                <li><a href="#" title="">Inicío</a></li>
-                <li><a href="#" title="">Produtos</a></li>
-                <li><a href="#" title="">Contato</a></li>
+    <header class="cabecalho">
+        <span class="cabecalho-logo">
+            <h1>Finder</h1>
+            <i class="bi bi-search" style="font-size: 1.5rem;"></i>
+        </span>
+        <nav class="navegacao">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#busca">Busca</a></li>
+                <li><a href="#">Entrar</a></li>
             </ul>
         </nav>
-        <button class="header-bnt">Entrar</button>
-        <div class="carrinho">
-            
-            <i class="bi bi-basket" style="font-size: 40px;"></i>
-        </div>
-        <div class="header-hamb" >
-            <button class="bi bi-list" style="font-size: 30px;" onclick="menuShow()"></button>
-        </div>
-        <div class="header-ul_mobile">
-            <ul id="nav-bar_items"></ul>
-                <li><a href="#" title="">Inicío</a></li>
-                <li><a href="#" title="">Produtos</a></li>
-                <li><a href="#" title="">Contato</a></li>
-                <li><a href="#" title="">Carrinho</a></li>
-        </div>
     </header>
-    <!--Fim Header-->
-    <!--Barra de categorias-->
-    <div class="cat-bar">
-        <div class="hamburguer">
-            <button class="bi bi-list" style="font-size: 30px;"></button>
-            <p>Todas as categorias</p>
-            <ul class="cat_list_hamb">
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-            </ul>
+    <section class="promocao-finder">
+        <div class="container">
+            <div class="container-wel">
+                <h2>Bem-vindo ao</h2>
+                <h2>Finder!</h2>
+                <i class="bi bi-search" style="font-size: 3rem;"></i>
+            </div>
+            <div>
+                <div class="container-wel-p">
+                    <p>
+                        O Finder é a sua ferramenta de busca ideal para encontrar os melhores produtos disponíveis
+                        em diversas lojas virtuais. Nossa proposta é oferecer uma experiência de compra mais fácil
+                        e eficiente, permitindo que você compare preços e encontre as melhores ofertas em um só lugar.
+                    </p>
+                    <p>
+                        Com categorias que vão desde eletrônicos, roupas, cosméticos até artigos esportivos,
+                        o Finder ajuda você a economizar tempo e dinheiro. Faça sua pesquisa e descubra as melhores
+                        opções disponíveis.
+                    </p>
+                </div>
+            </div>
         </div>
-        <ul class="cat_list">
-            <li>Celulares</li>
-            <li>Móveis</li>
-            <li>Eletrodomésticos</li>
-            <li>TV e Vídeo</li>
-            <li>Informática</li>
-            <li>Mercado</li>
-        </ul>
-    </div>
-    <!--Fim de barra de categorias-->
+    </section>
 
-<!--Link JavaScript-->
-<script src="assets/js/javascript.js"></script>
+    <section id="busca">
+        <div class="busca-container">
+            <input type="text" id="campo-busca" class="barra-busca" placeholder="Digite o nome do produto">
+            <button id="botao-buscar" class="botao-submit">Buscar</button>
+        </div>
+        <div class="categorias-container">
+            <button class="botao-categoria" data-categoria="eletronicos">Eletrônicos</button>
+            <button class="botao-categoria" data-categoria="roupas">Roupas</button>
+            <button class="botao-categoria" data-categoria="cosmeticos">Cosméticos</button>
+            <button class="botao-categoria" data-categoria="esportes">Esportes</button>
+            <button class="botao-categoria" data-categoria="mercado">Mercado</button>
+            <button class="botao-categoria" data-categoria="roupa masculina">Roupa Masculina</button>
+            <button class="botao-categoria" data-categoria="roupa feminina">Roupa Feminina</button>
+        </div>
+        <div id="mensagem-busca" class="mensagem-busca">
+            <h3 id="texto-mensagem"></h3>
+        </div>
+        <div id="resultados" class="produtos-destaque">
+            <div class="grid-produtos" id="grid-produtos"></div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape-informacoes">
+            <p>&copy; 2024 Finder. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

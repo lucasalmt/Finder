@@ -1,0 +1,204 @@
+:root {
+    --cor-fundo: #f8f8f8;
+    --cor-principal: #007bff;
+    --cor-secundaria: #343a40;
+    --cor-texto: #333;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+}
+
+.cabecalho {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navegacao ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+}
+
+.busca-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.barra-busca {
+    width: 100%;
+}
+
+.barra-busca,
+.botao-submit {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.promocao-finder {
+    background-color: var(--cor-secundaria); /* Cor de fundo suave */
+    padding: 50px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-fundo);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container-wel {
+    width: 70%;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    border-right: 5px solid var(--cor-fundo);
+}
+
+.container-wel-p {
+    width: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.promocao-finder h2 {
+    font-size: 2em; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.promocao-finder p {
+    font-size: 1.2em; /* Tamanho da fonte dos parágrafos */
+    margin-bottom: 20px; /* Espaçamento abaixo dos parágrafos */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+}
+
+.btn-explorar {
+    display: inline-block; /* Para adicionar espaçamento ao redor do botão */
+    background-color: #007bff; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    text-decoration: none; /* Remove sublinhado do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Efeito de transição na cor de fundo */
+}
+
+.btn-explorar:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+
+.botao-nav {
+    background-color: var(--cor-principal);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+
+.produtos-destaque {
+    max-width: 1200px;
+    margin: auto;
+}
+.mensagem-busca {
+    text-align: center; /* Centraliza a mensagem */
+    margin: 20px 0; /* Margem acima e abaixo */
+}
+
+.mensagem-busca h3 {
+    font-size: 1.5em; /* Tamanho da fonte da mensagem */
+    color: #333; /* Cor do texto */
+}
+
+
+.categorias-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.botao-categoria {
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+.imagem-produto {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.rodape {
+    background-color: var(--cor-secundaria);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
