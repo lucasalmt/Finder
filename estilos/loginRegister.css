@@ -1,0 +1,131 @@
+:root {
+    --cor-fundo: #f8f8f8;
+    --cor-principal: #007bff;
+    --cor-secundaria: #343a40;
+    --cor-texto: #333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top right, #f2f2f2, #007bff);
+
+}
+.cabecalho {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navegacao ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;   
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.formClass {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px    ;
+    
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: none;
+    border: 1px solid black;
+    outline: none;
+}
+
+span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register {
+    align-self: flex-end;
+}
+
+.btn {
+    margin: 10px 0;
+    background-color: #00aaff;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--cor-principal);
+    transition: 0.2s;
+    color: var(--cor-fundo);
+    border: none;
+}
