@@ -20,8 +20,13 @@
   font-family: 'Roboto', sans-serif;
 }
 
+a { 
+    text-decoration: none;
+    color: #000;
+}
+
 body {
-  background-color: rgb(41, 55, 121);
+  background: #FFF;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -36,22 +41,16 @@ body {
   width: 100vw;
   height: 100vh;
   align-items: center;
+
 }
 
-.card {
-  width: 500px;
-  height: 500px;
-  margin-top: 65px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  border: 1px solid whitesmoke;
-  border-radius: 6%; 
-  background-color: #ffffff80;
-  
-
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: none;
+    border: 1px solid black;
+    outline: none;
 }
 
 h1{
@@ -73,6 +72,11 @@ h1{
   transition: all .3s ease-out;
   border-radius: 0;
   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 .label-float{
@@ -100,7 +104,7 @@ h1{
 .label-float input:valid + label{
   font-size: 13px;
   margin-top: 0;
-  color: #4038a0
+  color: #000;
 }
 
 button{
@@ -118,7 +122,7 @@ button{
 }
 
 button:hover{
-  background-color: #000000;
+  background-color: #666666  ;
   color: #fff;
 }
 

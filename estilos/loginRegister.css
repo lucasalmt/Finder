@@ -71,6 +71,11 @@ main {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+
+.section2 {
+    display: flex;
+    gap: 50px;
+}
 .infos {
     display: flex;
     flex-direction: column;
